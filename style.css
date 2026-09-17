@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- This tells the browser which character system to use -->
+    <meta charset="UTF-8">
+
+    <!-- This makes the website work properly on mobile phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website title -->
+    <title>Online Resume Builder</title>
+
+    <!-- Connect HTML with our CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- ============================= -->
+    <!-- WEBSITE HEADER -->
+    <!-- ============================= -->
+
+    <header>
+
+        <h1>Online Resume Builder</h1>
+
+        <p>Create Your Professional Resume</p>
+
+    </header>
+
+
+    <!-- ============================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ============================= -->
+
+    <main>
+
+
+        <!-- ============================= -->
+        <!-- LEFT SIDE - FORM -->
+        <!-- ============================= -->
+
+        <section class="form-section">
+
+            <h2>Enter Your Details</h2>
+
+
+            <!-- FULL NAME -->
+
+            <label for="name">Full Name</label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your full name"
+            >
+
+
+            <!-- EMAIL -->
+
+            <label for="email">Email</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+
+            <!-- PHONE -->
+
+            <label for="phone">Phone Number</label>
+
+            <input
+                type="text"
+                id="phone"
+                placeholder="Enter your phone number"
+            >
+
+
+            <!-- LOCATION -->
+
+            <label for="location">Location</label>
+
+            <input
+                type="text"
+                id="location"
+                placeholder="Hyderabad, India"
+            >
+
+
+            <!-- CAREER OBJECTIVE -->
+
+            <label for="objective">Career Objective</label>
+
+            <textarea
+                id="objective"
+                placeholder="Write your career objective"
+            ></textarea>
+
+
+            <!-- EDUCATION -->
+
+            <label for="education">Education</label>
+
+            <textarea
+                id="education"
+                placeholder="Example: B.Tech in AI & Data Science - 2024-2028"
+            ></textarea>
+
+
+            <!-- SKILLS -->
+
+            <label for="skills">Skills</label>
+
+            <textarea
+                id="skills"
+                placeholder="Example: Python, Java, HTML, CSS, SQL"
+            ></textarea>
+
+
+            <!-- PROJECTS -->
+
+            <label for="projects">Projects</label>
+
+            <textarea
+                id="projects"
+                placeholder="Enter your projects"
+            ></textarea>
+
+
+            <!-- EXPERIENCE -->
+
+            <label for="experience">Experience</label>
+
+            <textarea
+                id="experience"
+                placeholder="Enter your experience"
+            ></textarea>
+
+
+            <!-- CERTIFICATIONS -->
+
+            <label for="certifications">Certifications</label>
+
+            <textarea
+                id="certifications"
+                placeholder="Enter your certifications"
+            ></textarea>
+
+
+            <!-- ============================= -->
+            <!-- BUTTONS -->
+            <!-- ============================= -->
+
+            <button onclick="generateResume()">
+                Generate Resume
+            </button>
+
+            <button onclick="window.print()">
+                Print / Save as PDF
+            </button>
+
+        </section>
+
+
+
+        <!-- ============================= -->
+        <!-- RIGHT SIDE - RESUME PREVIEW -->
+        <!-- ============================= -->
+
+        <section class="resume-section" id="resume">
+
+
+            <!-- RESUME HEADER -->
+
+            <div class="resume-header">
+
+                <h1 id="r-name">
+                    Your Name
+                </h1>
+
+                <p>
+
+                    <span id="r-email">
+                        Email
+                    </span>
+
+                    |
+
+                    <span id="r-phone">
+                        Phone
+                    </span>
+
+                    |
+
+                    <span id="r-location">
+                        Location
+                    </span>
+
+                </p>
+
+            </div>
+
+
+
+            <!-- ============================= -->
+            <!-- RESUME CONTENT -->
+            <!-- ============================= -->
+
+            <div class="resume-content">
+
+
+                <!-- OBJECTIVE -->
+
+                <h2>Career Objective</h2>
+
+                <p id="r-objective">
+                    Your career objective will appear here.
+                </p>
+
+
+
+                <!-- EDUCATION -->
+
+                <h2>Education</h2>
+
+                <p id="r-education">
+                    Your education details will appear here.
+                </p>
+
+
+
+                <!-- SKILLS -->
+
+                <h2>Skills</h2>
+
+                <p id="r-skills">
+                    Your skills will appear here.
+                </p>
+
+
+
+                <!-- PROJECTS -->
+
+                <h2>Projects</h2>
+
+                <p id="r-projects">
+                    Your projects will appear here.
+                </p>
+
+
+
+                <!-- EXPERIENCE -->
+
+                <h2>Experience</h2>
+
+                <p id="r-experience">
+                    Your experience will appear here.
+                </p>
+
+
+
+                <!-- CERTIFICATIONS -->
+
+                <h2>Certifications</h2>
+
+                <p id="r-certifications">
+                    Your certifications will appear here.
+                </p>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Connect HTML with JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
